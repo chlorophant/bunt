@@ -9,7 +9,7 @@ todosController.createTable()
 
 const server = Bun.serve({
   port: 8080,
-  hostname: "localhost",
+  // hostname: "localhost",
   fetch: handler
 })
 
