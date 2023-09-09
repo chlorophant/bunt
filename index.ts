@@ -8,7 +8,7 @@ const todosController = new Todos(
 todosController.createTable()
 
 const server = Bun.serve({
-  port: 8080,
+  port: process.env.PORT || 8080,
   // hostname: "localhost",
   fetch: handler
 })
